@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@500&display=swap');
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Base styles */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f7efef;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f7efef;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    z-index: 50000;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8f9ef0;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change link color on hover */
+}
+
+
+.main {
+    
+    background-image: url(images/xc.jpg);
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 200px 0;
+    height: 550px;
+    color: #f7efef;
+    align-items: center;
+}
+
+.main h2 {
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.main h2 span {
+    color: rgb(92, 104, 212);
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 10px 0;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.main h3 span {
+    color: rgb(92, 104, 212);
+    font-weight: 800;
+}
+/*
+.main_button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(207, 186, 231);
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 10px 30px;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+*/
+.main_button:hover {
+    background-color: #8f9ef0;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3 ease;
+}
+.social-icons a :hover{
+    color: #8f9ef0;
+    transform: scale(2);
+    
+
+}
+
+.projects {
+    background-color: #f7efef;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.title {
+    color: rgb(92, 104, 212);
+    font-size: 2.2em;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f7efef;
+    border: 1px solid;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    z-index: 5000;
+}
+
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image img {
+    width: 100%;
+}
+.project-info {
+    padding: 1em;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.project-cat {
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.details {
+    text-decoration: none;
+    color: #8f9ef0;
+    margin-top: 10px; /* Add space between "Visit" and "Project title" */
+}
+
+.details:hover {
+    transform: scale(1.1);
+    color: #5c72f0;
+}
+
+/* Responsive Design for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .main h2 {
+        font-size: 1.5em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    .main_button {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 90%;
+        margin: 10px 0;
+    }
+}
